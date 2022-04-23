@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*
+font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Light-red: hsl(356, 100%, 66%);
+    --Very-light-red: hsl(355, 100%, 74%);
+    --Very-dark-blue: hsl(208, 49%, 24%);
+    --White: hsl(0, 0%, 100%);
+    --Grayish-blue: hsl(240, 2%, 79%);
+    --Very-dark-grayish-blue: hsl(207, 13%, 34%);
+    --Very-dark-black-blue: hsl(240, 10%, 16%);
+    --Very-dark-gray-blue: hsl(237, 17%, 21%);
+    --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+    --peach-color: #FB9688;
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--Grayish-blue);
+    min-height: 100vh;
+    color: white;
+}
+
+header{
+    background-color: var(--Light-red);
+    width: 100%;
+    border-radius: 1px 1px 1px 100px;
+    background-image: url("../Additional-resources/images/bg-pattern-intro-mobile.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.brand-image{
+    max-width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+    max-width: 100%;
+    height: 40px;
+}
+
+input#menu-hamburguesa~ul a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+input#menu-hamburguesa~ul li.first{
+    padding: 5px;
+}
+
+input#menu-hamburguesa~ul li.second{
+    padding: 5px;
+}
+
+input#menu-hamburguesa~ul li.third{
+    padding: 5px;
+}
+
+input#menu-hamburguesa~ul li.fourth{
+    padding: 5px;
+}
+
+input#menu-hamburguesa~ul li.fifth{
+    padding: 5px;
+    border-radius: 100px;
+}
+
+input#menu-hamburguesa~ul{
+    background-color: var(--Very-dark-black-blue);
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    transition: all 300ms linear;
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    right: 0;
+}
+
+@media only screen and (min-width:768px){
+
+    label{
+        display: none;
+    }
+
+    input#menu-hamburguesa~ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+    }
+
+    input#menu-hamburguesa~ul>li{
+        padding: 10px;
+    }
+
+    input#menu-hamburguesa~ul>li.first:hover{
+        background-color: var(--peach-color);
+        border-radius: 15px 0px 15px 0px;    
+    }
+    
+    input#menu-hamburguesa~ul>li.second:hover{
+        background-color: var(--peach-color);
+        border-radius:  0px 15px 0px 15px;
+    }
+    
+    input#menu-hamburguesa~ul>li.third:hover{
+        background-color: var(--peach-color);
+        border-radius:  15px  0px  15px 0px;
+    }
+    
+    input#menu-hamburguesa~ul>li.fourth:hover{
+        background-color: var(--peach-color);
+        border-radius:  0px  15px  0px 15px;
+    }
+    
+    input#menu-hamburguesa~ul>li.fifth:hover{
+        background-color: var(--peach-color);
+        border-radius:  15px 0px  15px  0px ;
+    }
+
+
+}
+
+.header-div{
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 85px;
+}
+
+.header-div h1{
+    font-size: 33px;
+    margin-bottom: 10px;
+    
+}
+
+.header-div p{
+    color: white;
+    padding: 10px;
+}
+
+.first-button{
+    color: var(--Light-red);
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px;
+    display: flex;
+    border-radius: 30px;
+    padding: 10px;
+    color: var(--Light-red);
+    background-color: white;
+    text-decoration: none;
+}
+
+.second-button{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px;
+    display: flex;
+    border-radius: 30px;
+    padding: 5px;
+    color: var(--Light-red);
+    background-color: white;
+    text-decoration: none;
+}
+
+
+#First-Section{
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+.First-Section-h2{
+    font-size: 30px;
+    margin:10px;
+    color:black;
+}
+
+.First-Section-Div1{
+    margin: 10px;
+}
+
+.First-Section-Div1 h3{
+    margin-bottom: 20px;
+    color: black;
+    font-size: 25px;
+}
+
+.First-Section-Div1 p{
+    margin:15px 100px 50px 90px;
+    font-size: 20px;
+}
+
+
+.First-Section-Div2 h3{
+    margin-bottom: 20px;
+    color: black;
+    font-size: 25px;
+}
+
+.First-Section-Div2 p{
+    margin:15px 100px 75px 90px;
+    font-size: 20px;
+}
+
+
+#Second-Section{
+    text-align: center;
+    padding: 15px;
+}
+
+.Second-Section-h2{
+    font-size: 30px;
+    margin:10px;
+    color:black;
+    padding: 0px 0px 20px 0px;
+}
+
+.Second-Section-Div{
+    margin: 10px;
+}
+
+.Second-Section-Div p{
+    margin:15px 100px 50px 90px;
+    font-size: 20px;
+}
+
+#Third-Section{
+    text-align: center;
+    padding: 15px;
+}
+
+.Third-Section-Div h3{
+    margin-bottom: 20px;
+    color: black;
+    font-size: 25px;
+}
+
+.Third-Section-Div{
+    margin: 60px;
+}
+
+.Third-Section-Div p{
+    margin:15px 100px 50px 90px;
+    font-size: 20px;
+}
+
+
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/Additional-resources/images/bg-pattern-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: var(--Very-dark-gray-blue);
+    border-radius: 1px  100px 1px  1px ;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.Footer-Item{
+    font-size: 30px;
+    margin: 20px 0px 20px 0px;
+}
+
+.Product-item a{ 
+text-decoration: none;
+color: white;
+}
+
+.Product-item { 
+    padding: 10px;
+}
+
+.Company-item{
+    padding: 10px;
+}
+
+.Company-item a{ 
+    text-decoration: none;
+    color: white;
+}
+
+.Connect-item{
+    padding:10px;
+}
+
+.Connect-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-logo{
+    margin: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
